@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5NWpMlAszrG3Kka6DF3OQN2COifZXBpjlOP6Fua4fJi9c4O14y2ATAb76WQnudU7szaNqaqRe2+gIIsKH+Wy8w==",
+  "dgSpecHash": "opehZIvahyT+N332KksgvWrJDNb26/delIBSUMRpmy+bcA7WywKExh5jJpcc5wFQMmhYRxpzlyneskJmmDw/dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\emil.kjellin\\Documents\\Programmering 1\\Vinterprojekt\\ConsoleApp1\\ConsoleApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\emil.kjellin\\.nuget\\packages\\raylib-cs\\5.0.0\\raylib-cs.5.0.0.nupkg.sha512",
+    "C:\\Users\\emil.kjellin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

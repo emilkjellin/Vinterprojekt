@@ -1,19 +1,51 @@
-﻿Console.WriteLine("Feed man");
-int weight = 500;
+﻿using System.Numerics;
+using Raylib_cs;
+using System.Reflection.Metadata;
+Raylib.InitWindow(600 ,800, "");
+Texture2D Batman = Raylib.LoadTexture("BATMAN2.png");
+Batman.Height = 200;
+Batman.Width = 200;
+Raylib.SetTargetFPS(60);
+
+
+int x = 400;
+int y = 300;
 
 
 
-while( weight <=500 && weight >= 400)
+while (!Raylib.WindowShouldClose())
 {
-Console.WriteLine("You need to lose weight!");
-weight -= 2;
-Console.ReadKey();
-Console.ReadLine();
 
-}
-Console.ReadLine();
-if( weight <= 400 && weight <=300)
-{
-Console.WriteLine("Good work now you can either build muscle or continue loosing weight!");
+Raylib.BeginDrawing();
+Raylib.ClearBackground(Color.WHITE);
+Raylib.DrawTexture(Batman, x, y, Color.WHITE);
+Raylib.EndDrawing();
 
+ if (Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
+ {
+ x -= 10;
+ }
+
+if (Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT))
+ {
+ x += 10;
+ }
+
+ 
+if (Raylib.IsKeyDown(KeyboardKey.KEY_UP))
+ {
+ y -= 10;
+ }
+
+
+if (Raylib.IsKeyDown(KeyboardKey.KEY_DOWN))
+ {
+ y += 10;
+ }
+
+if (Raylib.IsKeyDown(KeyboardKey.KEY_SPACE))
+ {
+
+ 
+ }
 }
