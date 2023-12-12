@@ -49,13 +49,20 @@ if (Raylib.IsKeyDown(KeyboardKey.KEY_DOWN))
  y += 10;
  }
 
-if (Raylib.IsKeyDown(KeyboardKey.KEY_ENTER))
- {
- x = 700;
- y = 600;
- jumpscare1 = 0;
- }
+if (jumpscare1 == 1)
+{
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_ENTER))
+    {
+        x = 700;
+        y = 600;
+        jumpscare1 = 0;
+    }
 
+ if (Raylib.IsKeyDown(KeyboardKey.KEY_SPACE))
+ {
+    game = 0;
+ }
+}
 /*Collisions*/
 if ( x < 0 )
 {
@@ -101,6 +108,7 @@ Raylib.BeginDrawing();
     {
         Raylib.DrawTexture(jumpscare, 0, 0, Color.WHITE);
         Raylib.DrawText("Press Enter to restart ", 400, 540, 100,Color.WHITE);
+        Raylib.DrawText("Press Space to return to menu ", 300, 740, 100,Color.WHITE);
     }
 
     if ( jumpscare1 == 0)
