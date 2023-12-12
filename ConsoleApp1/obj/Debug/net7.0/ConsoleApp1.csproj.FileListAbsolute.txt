@@ -20,3 +20,6 @@ C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\De
 C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\runtimes\win-x86\native\raylib.dll
 C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.AssemblyReference.cache
 C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.CopyComplete
+C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\BATMAN2.png
+C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\baba.png
+C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\OIP.png
