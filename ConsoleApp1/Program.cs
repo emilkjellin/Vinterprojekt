@@ -2,6 +2,8 @@
 using Raylib_cs;
 using System.Reflection.Metadata;
 using System.Security.Principal;
+using System;
+using System.Media;
 Raylib.InitWindow(1920 ,1080, "");
 Raylib.SetTargetFPS(60);
 int x = 400;
@@ -9,7 +11,7 @@ int y = 300;
 Texture2D Batman = Raylib.LoadTexture("BATMAN2.png");
 Texture2D jumpscare = Raylib.LoadTexture("baba.png");
 Texture2D menu = Raylib.LoadTexture("OIP.png");
-
+Sound sound = Raylib.LoadSound("");
 Batman.Height = 50;
 Batman.Width = 50;
 jumpscare.Height = 1080;
@@ -108,7 +110,7 @@ Raylib.BeginDrawing();
     {
         Raylib.DrawTexture(jumpscare, 0, 0, Color.WHITE);
         Raylib.DrawText("Press Enter to restart ", 400, 540, 100,Color.WHITE);
-        Raylib.DrawText("Press Space to return to menu ", 300, 740, 100,Color.WHITE);
+        Raylib.DrawText("Press Space to return to menu ", 200, 740, 100,Color.WHITE);
     }
 
     if ( jumpscare1 == 0)
@@ -131,5 +133,10 @@ if (game == 0)
   game = 1;
  }
 }
+/*Ljud*/
 
+if (jumpscare1 == 1)
+{
+ /*Raylib.PlaySound();*/
+}
 }
