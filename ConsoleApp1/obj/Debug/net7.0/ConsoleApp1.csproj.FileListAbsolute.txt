@@ -22,4 +22,6 @@ C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\obj\De
 C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.CopyComplete
 C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\BATMAN2.png
 C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\baba.png
-C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\OIP.png
+C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\batman meny.png
+C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\Joker.png
+C:\Users\emil.kjellin\Documents\Programmering 1\Vinterprojekt\ConsoleApp1\bin\Debug\net7.0\Batmandope.png
