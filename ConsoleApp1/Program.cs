@@ -4,6 +4,7 @@ using System.Reflection.Metadata;
 using System.Security.Principal;
 using System;
 using System.Media;
+using System.Reflection;
 Raylib.InitWindow(1920 ,1080, "");
 Raylib.InitAudioDevice();
 Raylib.SetTargetFPS(60);
@@ -42,6 +43,8 @@ while (!Raylib.WindowShouldClose())
 {
 if (game == 1)
 {
+
+
 /*Keybinds*/
 if (Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
  {
@@ -150,6 +153,11 @@ if (x > 0 && x < 300 && y > 100 && y < 580 )
 {
     jumpscare1 = 1;
 }
+if (rectanglex +30 < x && rectanglex -30> x && y > 310 && y < 360)
+
+{
+    jumpscare1 = 1;
+}
 /*Rörelser*/
 
 rectanglex += velocityx;
@@ -164,27 +172,42 @@ velocityx += 1;
 }
 
 /* Timer */
-
+double untime = timer;  
 if (game == 1)
 {
     timer += 0.01;
 }
+if (game == 0 || game == 2)
+{
+    timer -= untime;
+}
+if (jumpscare1 == 1)
+{
+    timer -= untime;
+}
+
 
 Raylib.BeginDrawing();
 
 
+
+    static void title()
+    {
+    Raylib.DrawText("Batman: burtham city", 600, 50, 50, Color.WHITE);
+    }
 
 
     Raylib.ClearBackground(Color.PURPLE);
     
     Raylib.DrawTexture(joker, 200, 800, Color.WHITE);
     Raylib.DrawTexture(Batman, x-25, y, Color.WHITE);
-    Raylib.DrawText($"Time: {timer}  ",25, 45, 50, Color.WHITE);
+    Raylib.DrawText($"Time: {timer}  ", 25, 45, 50, Color.WHITE);
     if ( jumpscare1 == 1)
     {
         Raylib.DrawTexture(jumpscare, 0, 0, Color.WHITE);
         Raylib.DrawText("Press Enter to restart ", 400, 540, 100,Color.WHITE);
         Raylib.DrawText("Press Space to return to menu ", 200, 740, 100,Color.WHITE);
+        title();
     }
 
 
@@ -215,7 +238,8 @@ if (game == 0)
     Raylib.DrawTexture(menu, 0, 0, Color.WHITE);
     Raylib.DrawText("start", 900, 500, menutext,Color.WHITE);
     Raylib.DrawTexture(menubild , 650, -200, Color.WHITE);
-    
+
+
  
     if (Raylib.GetMouseX() > 840 && Raylib.GetMouseX() < 1040 && Raylib.GetMouseY() > 450 && Raylib.GetMouseY() < 510)
     {
@@ -227,7 +251,7 @@ if (game == 0)
             game = 1;
             x = 400;
             y = 300;
-        
+            jumpscare1 = 0;
         }
             
     }
